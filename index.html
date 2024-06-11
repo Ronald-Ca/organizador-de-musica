@@ -5,27 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Playlist com Propaganda</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="uploader">
-        <label for="entrySong">Upload da Música de Entrada:</label>
-        <input type="file" id="entrySong" accept="audio/*"><br><br>
-
-        <label for="playlist">Upload da Playlist:</label>
-        <input type="file" id="playlist" accept="audio/*" multiple><br><br>
-
-        <button id="generatePlaylistButton">Gerar Playlist</button>
-        <button id="downloadPlaylistButton" style="display:none;">Baixar Playlist Completa</button>
-    </div>
-    <div class="player" style="display:none;">
-        <audio id="audioPlayer" controls></audio>
-        <button id="nextButton">Próxima Música</button>
-    </div>
-    <div class="downloadLinks" style="display:none;">
-        <h2>Download da Playlist</h2>
-        <div id="linksContainer"></div>
+    <div class="container">
+        <header>
+            <h1>Adicione músicas. Personalize sua playlist.</h1>
+        </header>
+        <div class="uploader">
+            <div class="upload-section">
+                <label for="entrySong" class="upload-label">Upload da Música de Entrada:</label>
+                <input type="file" id="entrySong" accept="audio/*" class="upload-input"><br><br>
+            </div>
+            <div class="upload-section">
+                <label for="playlist" class="upload-label">Upload da Playlist:</label>
+                <input type="file" id="playlist" accept="audio/*" multiple class="upload-input"><br><br>
+            </div>
+            <button id="generatePlaylistButton" class="btn">Gerar Playlist</button>
+            <button id="downloadPlaylistButton" class="btn" style="display:none;">Baixar Playlist Completa</button>
+        </div>
+        <div class="player" style="display:none;">
+            <audio id="audioPlayer" controls></audio>
+            <button id="nextButton" class="btn">Próxima Música</button>
+        </div>
+        <div class="downloadLinks" style="display:none;">
+            <h2>Download da Playlist</h2>
+            <div id="linksContainer"></div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

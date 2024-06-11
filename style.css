@@ -1,22 +1,104 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
-    margin: 0;
+    color: #343a40;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-.uploader, .player, .downloadLinks {
+header {
     text-align: center;
-    margin: 20px;
+    margin-bottom: 20px;
 }
 
-button {
-    margin-top: 20px;
+h1 {
+    font-size: 24px;
+    margin: 0;
+    color: #007bff;
+}
+
+.uploader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.upload-section {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.upload-label {
+    font-weight: bold;
+    color: #495057;
+}
+
+.upload-input {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
     padding: 10px 20px;
     font-size: 16px;
+    border-radius: 5px;
     cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.player, .downloadLinks {
+    text-align: center;
+    width: 100%;
+}
+
+audio {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+#linksContainer a {
+    color: #007bff;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+    transition: color 0.3s ease;
+}
+
+#linksContainer a:hover {
+    color: #0056b3;
 }
